@@ -15,3 +15,8 @@ header {
     background-color: rgba(242, 159, 5, 0.28); /* Color with 28% opacity of the color #F29F05 */
     min-height: 100px;
 }
+
+
+head{
+    background-image: url(images.css/RainyDaysLogo-image.png);
+}
