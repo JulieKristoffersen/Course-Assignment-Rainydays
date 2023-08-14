@@ -1,0 +1,17 @@
+/* Reset margins and paddings for the entire page */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make images responsive and fill their containers */
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the header with a background color and minimum height */
+header {
+    background-color: rgba(242, 159, 5, 0.28); /* Color with 28% opacity of the color #F29F05 */
+    min-height: 100px;
+}
