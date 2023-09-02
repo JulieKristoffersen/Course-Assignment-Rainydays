@@ -6,56 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pushing the comfort zone, rain jackets from Rainydays">
     <title>Rainydays</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <theheader>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../men.html">Men</a></li>
-                <li><a href="women.html">Women</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="accesories.html">Accessories</a></li>
-            </ul>
-        </nav>
+        <img class="headerimg" src="images.css/RainyDaysLogo-image.png" alt="RainyDaysLogo-image">
+        <div class="headerimglist">
+            <img src="images.css/love.png" alt="like button">
+            <img src="images.css/user.png" alt="profile button">
+            <img src="images.css/shopping-cart.png" alt="cart button">
+        </div>
     </header>
+    <nav>
+        <ul class="main-nav">
+            <li><a href="./men.html">Men</a></li>
+            <li><a href="./women.html">Women</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="accesories.html">Accessories</a></li>
+        </ul>
+    </nav>
+    <div class="nav-line"></div>
 
-    <main>
-        <section class="top">
-            <h1>LET THE ADVENTURE BEGIN</h1>
-            <img src="images/Homepage/HOME-mainpic with view.jpg" alt="Main Adventure Image">
-            <img src="images/Homepage/HOME-two people in rain.jpg" alt="Two People in Rain">
-            <img src="images/Homepage/HOME-woman sitting with view.jpg" alt="Woman Sitting on Mountain">
-            <img src="images/Homepage/HOME-woman with accesories .jpg" alt="Woman with Accessories">
-        </section>
+</theheader>
 
-        <section class="new-products">
-            <h2>EXPLORE OUR NEWEST PRODUCTS</h2>
-            <article>
-                <img src="images/Homepage/Woman hiking.jpg" alt="Woman Hiking with Map">
-                <p><strong>HIKEDAY</strong><br>Our newest hiking jacket built for extreme weather over time.</p>
-            </article>
-            <article>
-                <img src="images/Homepage/redjacket.jpg" alt="Man with Red Rain Jacket">
-                <p><strong>EXTREME BOM</strong><br>Our most waterproofed jacket ever, with an extreme waterproofness range +20000 mmH2o.</p>
-            </article>
-            <article>
-                <img src="images/Homepage/Climbing man.jpg" alt="Man Inside the Mountain Climbing">
-                <p><strong>LIGHTWEIGHT</strong><br>Our most breathable and lightweight jacket for climbing.</p>
-            </article>
-        </section>
-
-        <section class="about-us">
-            <h2>About Us</h2>
-            <article>
-                <img src="images/Two people with backpack.jpg" alt="Two People on a Mountain with Backpacks">
-                <p><strong>RAINYDAYS</strong><br>Rainydays is a brand established in 2014 by the couple Smith. An active couple that wanted to make it possible to stay outside no matter the weather or activities. The company has now reached out to over 100,000 active people wanting to achieve their next goal in perfect clothing.</p>
-            </article>
-        </section>
+    <main class="flexContainer">
+        <div class="background-container">
+            <div class="text-overlay">
+                <h1>LET THE ADVENTURE BEGIN</h1>
+                <div class="shop-buttons">
+                    <p class="shop-button">SHOP WOMEN</p>
+                    <p class="shop-button">SHOP MEN</p>
+                </div>
+            </div>
+        </div>
+        <div class="flexRow">
+            <img src="images.css/Homepage/HOME-two people in rain.jpg" alt="two people in rain with rainjackets" class="leftImage">
+            <div class="rowImages">
+                <img src="images.css/Homepage/HOME-woman sitting with view.jpg" alt="woman on top of mountain with rainjacket">
+                <div class="image-container">
+                    <img src="images.css/Homepage/HOME-woman with accesories .jpg" alt="woman with accessories">
+                    <p class="shop-button overlay-btn">SHOP ACCESSORIES</p> </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Rainydays. All rights reserved.</p>
-    </footer>
+    <main class="flexnews">
+        <div class="textoverlay">
+            <h2>EXPLORE OUR NEWEST PRODUCTS</h2>
+        </div>
+        <div class="newproducts">
+            <div class="products">
+                <img src="images.css/Homepage/Woman hiking.jpg" alt="Woman Hiking with Map">
+                <p><strong>HIKEDAY</strong><br>Our newest hiking jacket built for extreme weather over time.</p>
+                <p class="shop-button">CHECK OUT</p>
+            </div>
+            <div class="product">
+                <img src="images.css/Homepage/redjacket.jpg" alt="Man with Red Rain Jacket">
+                <p><strong>EXTREME BOM</strong><br>Our most waterproofed jacket ever, waterproofness +20000 mmH2o.</p>
+                <p class="shop-button">CHECK OUT</p>
+            </div>
+            <div class="product">
+                <img src="images.css/Homepage/Climbing man.jpg" alt="Man Inside the Mountain Climbing">
+                <p><strong>LIGHTWEIGHT</strong><br>Our most breathable and lightweight jacket for climbing.</p>
+                <p class="shop-button">CHECK OUT</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="about-us">
+        <div class="textoverlay">
+            <h2>About Us</h2>
+        </div>
+        <div class="infoabout">
+            <img src="images.css/Two people with backpack.jpg" alt="Two People on a Mountain with Backpacks">
+            <p><strong>RAINYDAYS</strong><br>Rainydays is a brand established in 2014 by the couple Smith. An active couple that wanted to make it possible to stay outside no matter the weather or activities. The company has now reached out to over 100,000 active people wanting to achieve their next goal in perfect clothing.</p>
+        </div>
+    </section>
 </body>
+
+<div class="footer">
+    <div class="container">
+      <div class="footer-section">
+        <h3>Follow us</h3>
+        <p><img src="images.css/Div/facebook.png" alt="Facebook"></p>
+        <p><img src="images.css/Div/instagram.png" alt="Instagram"></p>
+        <p><img src="images.css/Div/youtube.png" alt="YouTube"></p>
+      </div>
+      <div class="footer-section">
+        <h3>About us</h3>
+        <p><strong>Visit our store</strong></p>
+        <p>1600 Pennsylvania Avenue NW, Washington, DC 20500, United States</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact us</h3>
+        <p><img src="images.css/Div/email.png" alt="Email"></p>
+        <p>rainydays.emailcontact@mail.com</p>
+        <p><img src="images.css/Div/phone-call.png" alt="Phone"></p>
+        <p>123 45 678 (open 7am - 4pm)</p>
+      </div>
+    </div>
+    <div class="back-to-top">
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </div>
 </html>
