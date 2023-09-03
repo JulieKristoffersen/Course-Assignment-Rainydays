@@ -137,8 +137,9 @@ nav {
 }
 
 .shop-button {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     margin: 0 30px;
+    margin-right: 20px;
     padding: 10px 20px;
     background-color: rgba(242, 159, 5, 1);
     color: #000;
@@ -188,11 +189,12 @@ nav {
 
 .overlay-btn {
     position: absolute;
-    bottom: 10px; /* Adjust as needed */
+    bottom: 10px; 
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
 }
+
 
 .image-container {
     position: relative;
@@ -245,44 +247,33 @@ nav {
 
 .about-us {
     display: flex;
-    max-width: 30%;
-    max-height: 30%;
-    margin-top: 30%;
-}
-
-text.overlay{
-    display: flex;
-    justify-content: right;
     align-items: center;
-    margin: 20px 0;
-    margin-top: 20%;
+    margin: 2% auto; /* Adjust margin as needed */
+    max-width: 80%; /* Adjust the maximum width */
 }
 
 .infoabout {
     flex: 1;
-    max-width: 200px;
-    max-height: 300px;
-    float: right;
     text-align: center;
     background-color: #FFFFFF;
     padding: 20px;
-    margin-bottom: 150px;
+    margin-left: 20px;
+    border-radius: 10px; 
+    
 }
 
-.footer {
-    margin-top: 50px;
-    background-color: orange;
-    color: black;
-    padding: 20px 0; 
-    text-align: center;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px; 
-    margin: 0 auto; 
-  }
+.infoabout h2 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.img-aboutus {
+    max-width: 50%; 
+    height: auto;
+}
+
+
+
 
   .footer img {
     width: 40px;
