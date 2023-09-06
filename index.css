@@ -66,14 +66,13 @@ nav {
     word-spacing: 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1000px) {
     .main-nav li {
         margin: 0 10%;
             font-size: 12px;
             margin: 10px;
         }
-    .footer {
-        .hide-on-small-screen {
+     .hide-on-small-screen {
             display: none; 
         }
     }
@@ -262,9 +261,8 @@ nav {
 .about-us {
     display: flex;
     align-items: center;
-    margin: 2% auto; /* Adjust margin as needed */
-    max-width: 80%; /* Adjust the maximum width */
-}
+    margin: 2% auto; 
+    max-width: 80%; }
 
 .infoabout {
     flex: 1;
