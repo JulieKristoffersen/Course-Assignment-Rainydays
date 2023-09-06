@@ -72,6 +72,11 @@ nav {
             font-size: 12px;
             margin: 10px;
         }
+    .footer {
+        .hide-on-small-screen {
+            display: none; /* Hide the element with this class */
+        }
+    }
     }
 }
 
