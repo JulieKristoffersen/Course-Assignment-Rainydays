@@ -69,7 +69,6 @@ nav {
 @media screen and (min-width: 768px) {
     .main-nav li {
         margin: 0 10%;
-        .your-text-container {
             font-size: 12px;
             margin: 10px;
         }
