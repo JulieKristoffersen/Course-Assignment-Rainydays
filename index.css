@@ -5,6 +5,11 @@ html, body {
     overflow-x: hidden;
 }
 
+.max-image {
+    max-width: 300px;
+    max-height: 200px;
+}
+
 .headerimg {
     max-width: 200px;
     position: absolute;
