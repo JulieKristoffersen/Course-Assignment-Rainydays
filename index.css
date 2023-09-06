@@ -74,7 +74,7 @@ nav {
         }
     .footer {
         .hide-on-small-screen {
-            display: none; /* Hide the element with this class */
+            display: none; 
         }
     }
     }
