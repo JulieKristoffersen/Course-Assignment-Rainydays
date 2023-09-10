@@ -76,7 +76,7 @@ nav {
             display: none; 
         }
     }
-    }
+    
 
 
 .main-nav a::before {
@@ -308,3 +308,4 @@ nav {
   .back-to-top a:hover {
     text-decoration: underline;
   }
+  

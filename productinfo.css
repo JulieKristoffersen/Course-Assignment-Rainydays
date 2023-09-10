@@ -1,0 +1,19 @@
+.box{
+    width: 4px;
+    height: 4px;
+}
+
+.productinfo {
+    flex: 1; 
+    padding: 20px;
+    right: 20px;
+    position: absolute; /* or 'fixed' for a fixed position */
+    top: 0; /* adjust top position as needed */
+    right: 0;
+}
+
+.leftImage {
+    flex: 1; 
+    max-width: 100%; 
+    height: auto;
+    left: 50%;
