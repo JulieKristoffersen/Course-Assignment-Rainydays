@@ -18,7 +18,21 @@ html, body {
     transform: translateX(-50%);
     text-align: center;
 }
+@media screen and (max-width: 768px) {
 
+    .headerimglist {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .headerimglist img {
+       
+    }
+    .hide-on-small-screen {
+        display: none; 
+    }
+}
 .headerimglist {
     display: flex;
     align-items: center;
@@ -30,10 +44,7 @@ html, body {
 .headerimglist img {
     max-width: 20px;
     margin-right: 10px;
-}
-
-.headerimglist img:last-child {
-    margin-right: 0;
+    margin: 5px;
 }
 
 nav {
@@ -72,9 +83,7 @@ nav {
             font-size: 12px;
             margin: 10px;
         }
-     .hide-on-small-screen {
-            display: none; 
-        }
+    
     }
     
 

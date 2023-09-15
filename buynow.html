@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="buynow.css">
+</head>
+<body>
+    <header>
+        <img class="headerimg" src="images.css/RainyDaysLogo-image.png" alt="RainyDaysLogo-image">
+        <div class="headerimglist">
+            <img src="images.css/love.png" alt="like button">
+            <img src="images.css/user.png" alt="profile button">
+            <img src="images.css/shopping-cart.png" alt="cart button">
+        </div>
+    </header>
+
+    <nav>
+        <ul class="main-nav">
+            <li><a href="./men.html">Men</a></li>
+            <li><a href="./women.html">Women</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="accesories.html">Accessories</a></li>
+        </ul>
+    </nav>
+    <div class="nav-line"></div>
+
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <section class="cart-payment">
+        <h2>Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="images.css/Mens jackets/1.jpg" alt="Product">
+                <div class="item-details">
+                    <h3>EXTREME BOM</h3>
+                    <p>Price: $205</p>
+                    <p>Quantity: 1</p>
+                    <p class="smaler-underline">Edit</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <h2>Payment</h2>
+        <form id="payment-form">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+            <label for="expiration">Expiration Date:</label>
+            <input type="text" id="expiration" name="expiration" required>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Your Company</p>
+    </footer>
+</body>
+</html>
