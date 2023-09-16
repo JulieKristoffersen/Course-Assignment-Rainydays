@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <img class="headerimg" src="images.css/RainyDaysLogo-image.png" alt="RainyDaysLogo-image">
+        <div class="headerimglist">
+            <img src="images.css/love.png" alt="like button">
+            <img src="images.css/user.png" alt="profile button">
+            <img src="images.css/shopping-cart.png" alt="cart button">
+        </div>
+    </header>
+
+    <nav>
+        <ul class="main-nav">
+            <li><a href="./men.html">Men</a></li>
+            <li><a href="./women.html">Women</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="accesories.html">Accessories</a></li>
+        </ul>
+    </nav>
+    <div class="nav-line"></div>
+
+    <div class="timeline">
+        <div class="timeline-item active">Cart</div>
+        <div class="timeline-item">Log in</div>
+        <div class="timeline-item">Adress</div>
+        <div class="timeline-item">Payment</div>
+        <div class="timeline-item">Done</div>
+    </div>
+
+    <main>
+        <section class="cart-details">
+            <h1>Cart</h1>
+        </section>
+        <section class="payment-status">
+            <div class="status-circle"></div>
+            <div class="status-line"></div>
+        </section>
+        <div class="product-and-total">
+            <div class="product-details">
+                <div class="product">
+                    <h3>EXTREME BOM</h3>
+                    <img src="images.css/Mens jackets/1.jpg" alt="Man in a red jacket">
+                    <p>Price: $205</p>
+                    <p>Apple red/Black</p>
+                    <p>Size M</p>
+                </div>
+                <div class="quantity-container">
+                    <button class="quantity-button minus-button" disabled>-</button>
+                    <span class="quantity-value">1</span>
+                    <button class="quantity-button plus-button">+</button>
+                </div>
+                </div>
+                <section class="total-amount">
+                    <h2>Total: $205</h2>
+                    <p>Before tax</p>
+                    <p style="margin-bottom: 200px;"></p>
+                    <div class="checkout-btn">
+                        <button class="continue-shopping">Continue Shopping</button>
+                        <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </section>
+            </div>
+</main>            
