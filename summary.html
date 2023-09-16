@@ -6,6 +6,7 @@
     <title>Checkout Page</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="buynow.css">
 </head>
 <body>
     <header>
@@ -28,16 +29,16 @@
     <div class="nav-line"></div>
 
     <div class="timeline">
-        <div class="timeline-item active">Cart</div>
-        <div class="timeline-item">Log in</div>
-        <div class="timeline-item">Adress</div>
-        <div class="timeline-item">Payment</div>
+        <div class="timeline-item finished"><img src="images.css/Div/check.png" alt="check"></div>
+        <div class="timeline-item finished"><img src="images.css/Div/check.png" alt="check"></div>
+        <div class="timeline-item finished"><img src="images.css/Div/check.png" alt="check"></div>
+        <div class="timeline-item active">Summary</div>
         <div class="timeline-item">Done</div>
     </div>
 
     <main>
         <section class="cart-details">
-            <h1>Cart</h1>
+            <h1>Summary</h1>
         </section>
         <section class="payment-status">
             <div class="status-circle"></div>
@@ -45,27 +46,31 @@
         </section>
         <div class="product-and-total">
             <div class="product-details">
-                <div class="product">
-                    <h3>EXTREME BOM</h3>
-                    <img src="images.css/Mens jackets/1.jpg" alt="Man in a red jacket">
+                <div class="cart-product">
+                    <h3><strong>Order</strong></h3>
+                    <img src="images.css/Mens jackets/1.jpg" alt="Man in a red jacket" width="80" height="80">
+                    <h4>EXTREME BOM</h4>
                     <p>Price: $205</p>
                     <p>Apple red/Black</p>
                     <p>Size M</p>
                 </div>
-                <div class="quantity-container">
-                    <button class="quantity-button minus-button" disabled>-</button>
-                    <span class="quantity-value">1</span>
-                    <button class="quantity-button plus-button">+</button>
-                </div>
-                </div>
-                <section class="total-amount">
-                    <h2>Total: $205</h2>
-                    <p>Before tax</p>
-                    <p style="margin-bottom: 200px;"></p>
-                    <div class="checkout-btn">
-                        <button class="continue-shopping">Continue Shopping</button>
-                        <button class="buy-now-button">Buy Now</button>
-                    </div>
-                </section>
             </div>
+            <section class="total-info">
+                <h3>Address</h3>
+                <p>Kari Hansen</p>
+                <p>Ola Normannsgate 1</p>
+                <p>0000 Oslo</p>
+                <p>Norway</p>
+                <h3>Payment Method</h3>
+                <img src="images.css/Div/visa.jpeg" alt="Card payment" width="50" height="50">
+            </section>
+            <section class="total-price">
+                Total amount $205
+            </section>
+            <div class="checkout-btn">
+                <button class="buy-now-button">Send Order and Pay Now</button>
+            </div>
+        </div>
+    </main>
+    
 </main>            

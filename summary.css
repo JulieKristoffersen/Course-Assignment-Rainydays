@@ -1,0 +1,136 @@
+/* Styling for the main section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for the "Summary" section */
+.cart-details {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.cart-details h1 {
+    font-size: 24px;
+}
+
+/* Styling for the "Payment Status" section */
+.payment-status {
+    margin-bottom: 20px;
+}
+
+.status-circle {
+    width: 20px;
+    height: 20px;
+    background-color: green; /* Change to your desired color */
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-line {
+    width: 2px;
+    height: 60px;
+    background-color: green; /* Change to your desired color */
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Styling for the product details */
+.cart-product {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.cart-product h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.cart-product img {
+    display: block;
+    margin: 10px auto;
+}
+
+.cart-product h4 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cart-product p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Styling for the total info and price section */
+.total-info {
+    text-align: left;
+}
+
+.total-info h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    height: 400px;
+    max-width: 400px;
+}
+
+.total-info img {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Styling for the total price and checkout button section */
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Styling for the total amount box */
+.total-box {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.total-box h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.total-box p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Styling for the checkout button */
+.checkout-btn {
+    width: 200px; /* Adjust the width as needed */
+}
+
+.buy-now-button {
+    background-color: #ff5722;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
