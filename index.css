@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+.a href="checkout.html">
+<img src="images.css/shopping-cart.png" alt="profile button" class="bottom-right-btn" />
+</a>
+
 .max-image {
     max-width: 300px;
     max-height: 200px;
@@ -318,47 +322,47 @@ nav {
     height: auto;
 }
 
-  .footer img {
+/* Common styles for footer elements */
+.footer img {
     width: 40px;
     height: auto;
     margin-right: 5px;
-  }
-  
-  .footer-section {
-    flex: 1; 
-    padding: 0 20px; 
-  }
-  
-  .footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px; 
-  }
-  
-  .back-to-top a {
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
     text-decoration: none;
     color: black;
-  }
-  
-  .back-to-top a:hover {
-    text-decoration: underline;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style for all footer links (including "Back to top") */
+.footer a {
+    text-decoration: none;
+    color: black; /* Set the default text color to black */
+}
+
+
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
     .footer {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 20px 0;
     }
-    
+
     .footer-section h3 + div {
         display: none;
     }
-  
+
     .footer-section {
         margin: 5px 0;
     }
-    
-    .back-to-top {
-        text-align: center;
-    }
+}
