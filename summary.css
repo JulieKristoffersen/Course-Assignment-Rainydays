@@ -59,7 +59,7 @@ h2 {
 }
 
 .buy-now-button {
-    background-color: #ff5722;
+    background-color: rgba(242, 159, 5, 1);
     color: black;
     border: none;
     border-radius: 5px;
