@@ -4,6 +4,9 @@ html, body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow-x: hidden;
 }
+a {
+    text-decoration: none;
+}
 
 .max-image {
     max-width: 300px;
@@ -56,7 +59,6 @@ nav {
     transition: color 0.3s;
 }
 
-
 .main-nav {
     list-style: none;
     display: flex;
@@ -87,8 +89,6 @@ nav {
     
     }
     
-
-
 .main-nav a::before {
     content: "";
     position: absolute;
@@ -218,6 +218,30 @@ nav {
     text-align: center;
 }
 
+/* Your existing CSS rules */
+
+.image-container {
+    position: relative;
+}
+
+.shop-button-overlay-btn {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(242, 159, 5, 1);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.shop-button-overlay-btn:hover {
+    background-color: #F27405;
+}
+
 
 .image-container {
     position: relative;
@@ -319,3 +343,22 @@ nav {
     text-decoration: underline;
   }
   
+  @media screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .footer-section h3 + div {
+        display: none;
+    }
+  
+    .footer-section {
+        margin: 5px 0;
+    }
+    
+    .back-to-top {
+        text-align: center;
+    }
