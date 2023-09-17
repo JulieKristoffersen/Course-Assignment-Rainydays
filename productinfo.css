@@ -1,19 +1,81 @@
-.box{
-    width: 4px;
-    height: 4px;
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.productinfo {
-    flex: 1; 
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    right: 20px;
-    position: absolute; /* or 'fixed' for a fixed position */
-    top: 0; /* adjust top position as needed */
-    right: 0;
 }
 
-.leftImage {
-    flex: 1; 
-    max-width: 100%; 
+.product-image {
+    max-width: 50%;
     height: auto;
-    left: 50%;
+}
+
+.product-info {
+    max-width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.product-info h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.size-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 10   px;
+}
+
+.size-input {
+    display: none; 
+}
+
+.size {
+    background-color: rgba(242, 159, 5, 0.4);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.size:hover {
+    background-color: #ff5722; 
+}
+
+.size-input:checked + .size {
+    background-color: #ff5722;
+    color: black;
+}
+.buy-button {
+    background-color: rgba(242, 159, 5, 0.4);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.buy-button:hover {
+    background-color: #ff5722;
+}

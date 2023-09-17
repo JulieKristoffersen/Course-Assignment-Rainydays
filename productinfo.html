@@ -7,10 +7,11 @@
     <meta name="description" content="Pushing the comfort zone, rain jackets from Rainydays">
     <title>Rainydays</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="men.css"
+    <link rel="stylesheet" href="men.css">
+    <link rel="stylesheet" href="product.css"> 
+    <link rel="stylesheet" href="productinfo.css">
 </head>
 <body>
-    <theheader>
     <header>
         <img class="headerimg" src="images.css/RainyDaysLogo-image.png" alt="RainyDaysLogo-image">
         <div class="headerimglist">
@@ -29,33 +30,35 @@
     </nav>
     <div class="nav-line"></div>
 
-    <main class="flexContainer">
-        <img src="images.css/Mens jackets/1.jpg" alt="a man with a rain jacket" class="leftImage">
-        <div class="productinfo">
-            <div class="infotext">
-                <p><strong>EXTREME BOM</strong></p>
-                <p>$ 205</p>
-                <p>Stay dry, warm and comfortable with Our most waterproofed jacket ever. With fully taped seams, the jacket is breathable, windproof, and waterproof. It has an extreme waterproofness range +20000 mmH2o.</p>
-                <p>Material: 100% Polyester</p>
-                <p>Model is 180 cm tall wearing a size M</p>
-                <div class="sizebox">
-                    <div class="box">
-                        <p>S</p>
-                    </div>
-                    <div class="box">
-                        <p>M</p>
-                    </div>
-                    <div class="box">
-                        <p>L</p>
-                    </div>
-                    <div class="box">
-                        <p>XL</p>
-                    </div>
-                    <div class="box">
-                        <p>XXL</p>
-                    </div>
-                </div>
+    <main class="product-container">
+        <img src="images.css/Mens jackets/1.jpg" alt="a man with a rain jacket" class="product-image">
+        <div class="product-info">
+            <h1>EXTREME BOM</h1>
+            <p class="product-price">$205</p>
+            <p>Stay dry, warm, and comfortable with our most waterproofed jacket ever. With fully taped seams, the jacket is breathable, windproof, and waterproof. It has an extreme waterproofness range +20000 mmH2o.</p>
+            <p>Material: 100% Polyester</p>
+            <p>Model is 180 cm tall wearing a size M</p>
+            <div class="size-box">
+                <input type="radio" id="size-s" name="size" class="size-input">
+                <label for="size-s" class="size">S</label>
+            
+                <input type="radio" id="size-m" name="size" class="size-input">
+                <label for="size-m" class="size">M</label>
+            
+                <input type="radio" id="size-l" name="size" class="size-input">
+                <label for="size-l" class="size">L</label>
+            
+                <input type="radio" id="size-xl" name="size" class="size-input">
+                <label for="size-xl" class="size">XL</label>
+            
+                <input type="radio" id="size-xxl" name="size" class="size-input">
+                <label for="size-xxl" class="size">XXL</label>
             </div>
+            <a href="checkout.html">
+                <button class="buy-button">Add to Cart</button>
+            </a>
+            
+            
         </div>
     </main>
     
