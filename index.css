@@ -8,10 +8,6 @@ a {
     text-decoration: none;
 }
 
-.a href="checkout.html">
-<img src="images.css/shopping-cart.png" alt="profile button" class="bottom-right-btn" />
-</a>
-
 .max-image {
     max-width: 300px;
     max-height: 200px;
@@ -103,7 +99,7 @@ nav {
     left: 0;
     transform: scaleX(0);
     transform-origin: center;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
 }
 
 .main-nav a:hover::before {
@@ -222,8 +218,6 @@ nav {
     text-align: center;
 }
 
-/* Your existing CSS rules */
-
 .image-container {
     position: relative;
 }
@@ -308,8 +302,7 @@ nav {
     background-color: #FFFFFF;
     padding: 20px;
     margin-left: 20px;
-    border-radius: 10px; 
-    
+    border-radius: 10px;  
 }
 
 .infoabout h2 {
@@ -322,7 +315,6 @@ nav {
     height: auto;
 }
 
-/* Common styles for footer elements */
 .footer img {
     width: 40px;
     height: auto;
@@ -341,15 +333,11 @@ nav {
     margin-bottom: 10px;
 }
 
-/* Style for all footer links (including "Back to top") */
 .footer a {
     text-decoration: none;
-    color: black; /* Set the default text color to black */
+    color: black; 
 }
 
-
-
-/* Media query for small screens */
 @media screen and (max-width: 768px) {
     .footer {
         display: flex;

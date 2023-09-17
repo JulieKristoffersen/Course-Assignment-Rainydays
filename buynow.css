@@ -3,29 +3,24 @@ body {
     overflow-x: hidden;
 }
 
-/* Hide all payment descriptions by default */
 .payment-description {
     display: none;
 }
 
-/* Show payment description when the corresponding radio button is checked */
 .payment-option input[type="radio"]:checked + .payment-description {
     display: block;
 }
 
 .payment-description-box {
-    background-color: #f0f0f0; /* Background color of the box */
-    padding: 20px; /* Padding around the content */
-    border-radius: 8px; /* Rounded corners for the box */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle depth effect */
-    margin-top: 20px; /* Margin to separate it from other elements */
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
 }
 
-
-
 .payment-methods {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .payment-option {
@@ -35,57 +30,29 @@ body {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
+    margin-right: 20px;
 }
 
 .payment-option label {
     margin-left: 10px;
 }
 
-/* Style for payment descriptions */
 .payment-description {
     margin-top: 10px;
 }
 
-/* Style for payment details */
 .payment-details {
-    margin-top: 20px;
-}
-
-.continue-shopping {
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-.buy-now-button {
-    background-color: #ff5722;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.total-amount h3 {
-    align-items: center;
-    font-size: 24px; /* Adjust the font size */
-    margin-bottom: 10px; /* Add some spacing below the header */
+    margin-top: 30px;
 }
 
 .Proceed-btn {
     display: block;
-    margin: 0 auto; /* Center the button horizontally */
-    font-size: 24px; /* Adjust the font size to make it large */
-    padding: 10px 20px; /* Add padding to make it larger */
-    background-color: #ff6600; /* Background color */
-    color: #000; /* Text color */
-    border: none; /* Remove the border */
-    border-radius: 5px; /* Add rounded corners */
+    margin: 0 auto; 
+    font-size: 24px; 
+    padding: 10px 20px;
+    background-color: #F29F05; 
+    color: #000; 
+    border: none; 
+    border-radius: 5px; 
     cursor: pointer;
 }

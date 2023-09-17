@@ -39,7 +39,7 @@
     background-color: rgba(242, 159, 5, 0.28);
     color: #000;
     font-weight: bold;
-    border-color: #F27405;
+    border-color: #F29F05;
 }
 
 .timeline-item-text {
@@ -90,7 +90,7 @@
 .product-and-total {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the top */
+    align-items: flex-start; 
 }
 
 .product-details {
@@ -123,7 +123,6 @@
 
 .product-and-total {
     display: flex;
-    flex-direction: ;
     justify-content: space-between;
     align-items: flex-start; 
 }
@@ -143,7 +142,7 @@
 }
 
 .continue-shopping{
-    background-color: #ff6600;
+    background-color: rgba(242, 159, 5, 0.4);
     color: #000;
     border: none;
     border-radius: 5px;
@@ -159,7 +158,7 @@
 }
 
 .buy-now-button {
-    background-color: #ff5722;
+    background-color: rgba(242, 159, 5, 0.4);
     color: #000;
     border: none;
     border-radius: 5px;
