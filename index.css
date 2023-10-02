@@ -29,9 +29,6 @@ a {
         align-items: center; 
     }
 
-    .headerimglist img {
-       
-    }
     .hide-on-small-screen {
         display: none; 
     }
@@ -132,7 +129,7 @@ nav {
 .background-container {
     margin-top: 20px;
     margin: 20px;
-    background-image: url('images.css/Homepage/HOME-mainpic with view.jpg');
+    background-image: url('images.css/Homepage/HOME-mainpic.with.view.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
