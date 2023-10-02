@@ -1,58 +1,57 @@
-
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .payment-description {
-    display: none;
+  display: none;
 }
 
-.payment-option input[type="radio"]:checked + .payment-description {
-    display: block;
+.payment-option input[type="radio"]:check.mark-iconed + .payment-description {
+  display: block;
 }
 
 .payment-description-box {
-    background-color: #f0f0f0; 
-    padding: 20px; 
-    border-radius: 8px; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-    margin-top: 20px; 
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 .payment-methods {
-    padding: 20px;
+  padding: 20px;
 }
 
 .payment-option {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-right: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 
 .payment-option label {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .payment-description {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .payment-details {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .Proceed-btn {
-    display: block;
-    margin: 0 auto; 
-    font-size: 24px; 
-    padding: 10px 20px;
-    background-color: #F29F05; 
-    color: #000; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #f29f05;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

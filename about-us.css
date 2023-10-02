@@ -1,106 +1,106 @@
 /* Reset some default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .product-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .product-image {
-    width: 250px;
-    height: auto;
+  width: 250px;
+  height: auto;
 }
 
 .product-info {
-    max-width: 50%;
-    padding: 20px;
-    text-align: left;
+  max-width: 50%;
+  padding: 20px;
+  text-align: left;
 }
 
 .product-info h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 .product-info p {
-    font-size: 15px;
-    margin-bottom: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 .product-info h3,
 .product-info .store-address {
-    margin-top: 40px; /* Adjust the margin as needed */
+  margin-top: 40px; /* Adjust the margin as needed */
 }
 
 .size-box {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    font-size: 10px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 10px;
 }
 
 .size-input {
-    display: none; 
+  display: none;
 }
 
 .size {
-    background-color: rgba(242, 159, 5, 0.4);
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: rgba(242, 159, 5, 0.4);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .size:hover {
-    background-color: #ff5722; 
+  background-color: #ff5722;
 }
 
-.size-input:checked + .size {
-    background-color: #ff5722;
-    color: black;
+.size-input:check.mark-iconed + .size {
+  background-color: #ff5722;
+  color: black;
 }
 
 .buy-button {
-    background-color: rgba(242, 159, 5, 0.4);
-    color: black;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 15px;
-    cursor: pointer;
-    margin-top: 20px;
+  background-color: rgba(242, 159, 5, 0.4);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .buy-button:hover {
-    background-color: #ff5722;
+  background-color: #ff5722;
 }
 
 /* Your existing CSS code */
 
 @media screen and (max-width: 500px) {
-    .size-box {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        gap: 10px;
-        margin-top: 10px;
-        font-size: 10px;
-        width: 60px;
-    }
+  .size-box {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 10px;
+    width: 60px;
+  }
 
-    /* Add this to make text wrap under the image */
-    .product-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  /* Add this to make text wrap under the image */
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .product-info {
-        max-width: 100%; /* Make the text span the full width */
-    }
+  .product-info {
+    max-width: 100%; /* Make the text span the full width */
+  }
 }

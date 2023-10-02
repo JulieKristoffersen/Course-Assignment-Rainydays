@@ -1,85 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pushing the comfort zone, rain jackets from Rainydays">
-    <title>Rainydays-checkout</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="checkout.css">
-    <link rel="stylesheet" href="men.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pushing the comfort zone, rain jackets from Rainydays"
+    />
+    <title>Rainydays-check.mark-iconout</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="check.mark-iconout.css" />
+    <link rel="stylesheet" href="men.css" />
+  </head>
+  <body>
     <header>
-        <a href="index.html">
-            <img class="headerimg" src="images.css/RainyDaysLogo-image.png" alt="RainyDaysLogo-image">
+      <a href="index.html">
+        <img
+          class="headerimg"
+          src="images.css/RainyDaysLogo-image.png"
+          alt="RainyDaysLogo-image"
+        />
+      </a>
+      <div class="headerimglist">
+        <img src="images.css/love.png" alt="like-button" />
+        <a href="login.html">
+          <img src="images.css/user.png" alt="profile-button" />
         </a>
-        <div class="headerimglist">
-            <img src="images.css/love.png" alt="like button">
-            <a href="login.html">
-                <img src="images.css/user.png" alt="profile button">
-            </a>
-            <a href="checkout.html">
-                <img src="images.css/shopping-cart.png" alt="cart button">
-            </a>
-        </div>
+        <a href="check.mark-iconout.html">
+          <img src="images.css/shopping-cart.png" alt="cart-button" />
+        </a>
+      </div>
     </header>
 
     <nav>
-        <ul class="main-nav">
-            <li><a href="./men.html">Men</a></li>
-            <li><a href="./women.html">Women</a></li>
-            <li><a href="./news.html">News</a></li>
-            <li><a href="accesories.html">Accessories</a></li>
-        </ul>
+      <ul class="main-nav">
+        <li><a href="./men.html">Men</a></li>
+        <li><a href="./women.html">Women</a></li>
+        <li><a href="./news.html">News</a></li>
+        <li><a href="accesories.html">Accessories</a></li>
+      </ul>
     </nav>
     <div class="nav-line"></div>
 
     <div class="timeline">
-        <div class="timeline-item active">Cart</div>
-        <div class="timeline-item">Log in</div>
-        <div class="timeline-item">Adress</div>
-        <div class="timeline-item">Payment</div>
-        <div class="timeline-item">Done</div>
+      <div class="timeline-item active">Cart</div>
+      <div class="timeline-item">Log in</div>
+      <div class="timeline-item">Adress</div>
+      <div class="timeline-item">Payment</div>
+      <div class="timeline-item">Done</div>
     </div>
 
     <main>
-        <a href="javascript:history.back()" class="my-button">Back</a>
-        <section class="cart-details">
-            <h1>Cart</h1>
+      <a href="javascript:history.back()" class="my-button">Back</a>
+      <section class="cart-details">
+        <h1>Cart</h1>
+      </section>
+      <section class="payment-status">
+        <div class="status-circle"></div>
+        <div class="status-line"></div>
+      </section>
+      <div class="product-and-total">
+        <div class="product-details">
+          <div class="product">
+            <h3>EXTREME BOM</h3>
+            <img
+              src="images.css/Mens jackets/1.jpg"
+              alt="Man.in.a.red.jacket"
+            />
+            <p>Price: $205</p>
+            <p>Apple red/Black</p>
+            <p>Size M</p>
+          </div>
+          <div class="quantity-container">
+            <button class="quantity-button minus-button" disabled>-</button>
+            <span class="quantity-value">1</span>
+            <button class="quantity-button plus-button">+</button>
+          </div>
+        </div>
+        <section class="total-amount">
+          <h2>Total: $205</h2>
+          <p>Before tax</p>
+          <p style="margin-bottom: 200px"></p>
+          <div class="check.mark-iconout-btn">
+            <a href="men.html">
+              <button class="continue-shopping">Continue Shopping</button>
+            </a>
+            <a href="login.html">
+              <button class="buy-now-button">Buy Now</button>
+            </a>
+          </div>
         </section>
-        <section class="payment-status">
-            <div class="status-circle"></div>
-            <div class="status-line"></div>
-        </section>
-        <div class="product-and-total">
-            <div class="product-details">
-                <div class="product">
-                    <h3>EXTREME BOM</h3>
-                    <img src="images.css/Mens jackets/1.jpg" alt="Man in a red jacket">
-                    <p>Price: $205</p>
-                    <p>Apple red/Black</p>
-                    <p>Size M</p>
-                </div>
-                <div class="quantity-container">
-                    <button class="quantity-button minus-button" disabled>-</button>
-                    <span class="quantity-value">1</span>
-                    <button class="quantity-button plus-button">+</button>
-                </div>
-                </div>
-                <section class="total-amount">
-                    <h2>Total: $205</h2>
-                    <p>Before tax</p>
-                    <p style="margin-bottom: 200px;"></p>
-                    <div class="checkout-btn">
-                        <a href="men.html">
-                        <button class="continue-shopping">Continue Shopping</button>
-                        </a>
-                        <a href="login.html">
-                        <button class="buy-now-button">Buy Now</button>
-                        </a>
-                    </div>
-                </section>
-            </div>
-</main>            
+      </div>
+    </main>
+  </body>
+</html>
