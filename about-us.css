@@ -60,7 +60,7 @@
   background-color: #ff5722;
 }
 
-.size-input:check.mark-iconed + .size {
+.size-input:check.size-input:check.mark-iconed + .size {
   background-color: #ff5722;
   color: black;
 }

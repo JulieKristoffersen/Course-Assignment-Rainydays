@@ -79,7 +79,6 @@
 .buy-button:hover {
   background-color: #ff5722;
 }
-/* Your existing CSS code */
 
 @media screen and (max-width: 500px) {
   .size-box {
@@ -92,7 +91,6 @@
     width: 60px;
   }
 
-  /* Add this to make text wrap under the image */
   .product-container {
     flex-direction: column;
     align-items: center;
@@ -100,6 +98,6 @@
   }
 
   .product-info {
-    max-width: 100%; /* Make the text span the full width */
+    max-width: 100%; 
   }
 }

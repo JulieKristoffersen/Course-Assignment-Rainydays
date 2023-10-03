@@ -76,15 +76,6 @@ nav {
     position: relative;
     word-spacing: 50px;
 }
-
-@media screen and (max-width: 1000px) {
-    .main-nav li {
-        margin: 0 10%;
-            font-size: 12px;
-            margin: 10px;
-        }
-    
-    }
     
 .main-nav a::before {
     content: "";
@@ -307,6 +298,10 @@ nav {
     margin-bottom: 10px; 
 }
 
+h3 {
+  font-size: 1.5rem; 
+}
+
 .img-aboutus {
     max-width: 50%; 
     height: auto;
@@ -351,3 +346,12 @@ nav {
         margin: 5px 0;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .main-nav li {
+        margin: 0 10%;
+            font-size: 18px;
+            margin: 10px;
+        }
+    
+    }
