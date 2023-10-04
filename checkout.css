@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: center;
     color: #ccc;
-    margin: 10px; 
+    margin: 10px;
 }
 
 .timeline-item.active {
@@ -43,24 +43,24 @@
 }
 
 .timeline-item-text {
-    font-size: 5px; 
-    margin-top: 20px; 
+    font-size: 5px;
+    margin-top: 20px;
 }
+
 .timeline-item.finished {
     background-color: rgba(242, 159, 5, 0.28);
 }
 
 .timeline-item img {
-    max-width: 50%%; 
-    max-height: 50%; 
-    display: block; 
-    margin: auto; 
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin: auto;
 }
 
 .quantity-button {
-    background-color: 
-    text-align: center;
-    color: #ff;
+    background-color: lightgrey;
+    color: #000;
     border: none;
     border-radius: 50%;
     width: 30px;
@@ -90,7 +90,7 @@
 .product-and-total {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
 
 .product-details {
@@ -124,8 +124,9 @@
 .product-and-total {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
+
 .total-amount {
     margin-right: 20px;
     align-items: center;
@@ -141,7 +142,7 @@
     display: center;
 }
 
-.continue-shopping{
+.continue-shopping {
     background-color: rgba(242, 159, 5, 0.4);
     color: #000;
     border: none;
@@ -175,16 +176,16 @@
 
 @media screen and (max-width: 768px) {
     .product-and-total {
-        flex-direction: column; /* Change flex-direction to stack elements vertically */
-        align-items: center; /* Center-align items */
+        flex-direction: column;
+        align-items: center;
     }
 
     .product-details {
-        max-width: none; /* Remove the maximum width */
-        margin: 20px auto; /* Center-align the product details */
+        max-width: none;
+        margin: 20px auto;
     }
 
     .total-amount {
-        margin: 0 auto; /* Center-align the total amount */
+        margin: 0 auto;
     }
 }

@@ -1,114 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Pushing the comfort zone, rain jackets from Rainydays"
-    />
-    <title>Rainydays-payment</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="checkout.css" />
-    <link rel="stylesheet" href="buynow.css" />
-    <link rel="stylesheet" href="men.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pushing the comfort zone, rain jackets from Rainydays">
+    <title>Payment-Rainydays</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="buynow.css">
+    <link rel="stylesheet" href="men.css">
+</head>
+<body>
     <header>
-      <a href="index.html">
-        <img
-          class="headerimg"
-          src="images.css/RainyDaysLogo-image.png"
-          alt="RainyDaysLogo-image"
-        />
-      </a>
-      <div class="headerimglist">
-        <img src="images.css/love.png" alt="like-button" />
-        <a href="login.html">
-          <img src="images.css/user.png" alt="profile-button" />
+        <a href="index.html">
+            <img class="headerimg" src="images.css/RainyDaysLogo-image.png" alt="RainyDaysLogo-image">
         </a>
-        <a href="chekout.html">
-          <img src="images.css/shopping-cart.png" alt="cart-button" />
-        </a>
-      </div>
+        <div class="headerimglist">
+            <img src="images.css/love.png" alt="like-button">
+            <a href="login.html">
+                <img src="images.css/user.png" alt="profile-button">
+            </a>
+            <a href="checkout.html">
+                <img src="images.css/shopping-cart.png" alt="cart-button">
+            </a>
+        </div>
     </header>
 
     <nav>
-      <ul class="main-nav">
-        <li><a href="./men.html">Men</a></li>
-        <li><a href="./women.html">Women</a></li>
-        <li><a href="./news.html">News</a></li>
-        <li><a href="accesories.html">Accessories</a></li>
-      </ul>
+        <ul class="main-nav">
+            <li><a href="./men.html">Men</a></li>
+            <li><a href="./women.html">Women</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+        </ul>
     </nav>
     <div class="nav-line"></div>
 
     <div class="timeline">
-      <div class="timeline-item finished">
-        <img src="images.css/Div/check.png" alt="check.mark-icon" />
-      </div>
-      <div class="timeline-item finished">
-        <img src="images.css/Div/check.png" alt="check.mark-icon" />
-      </div>
-      <div class="timeline-item active">Payment</div>
-      <div class="timeline-item">Summary</div>
-      <div class="timeline-item">Done</div>
+        <div class="timeline-item finished">
+            <img src="images.css/Div/check.png" alt="check-mark-icon">
+        </div>
+        <div class="timeline-item finished">
+            <img src="images.css/Div/check.png" alt="check-mark-icon">
+        </div>
+        <div class="timeline-item active">Payment</div>
+        <div class="timeline-item">Summary</div>
+        <div class="timeline-item">Done</div>
     </div>
     <a href="javascript:history.back()" class="my-button">Back</a>
     <div class="payment-methods">
-      <h2>Select a Payment Method:</h2>
-      <ul>
-        <li class="payment-option">
-          <input type="radio" id="credit-card" name="payment-method" />
-          <label for="credit-card">Credit Card</label>
-          <img
-            src="images.css/Div/visa.jpeg"
-            alt="Credit.Card-Icon"
-            width="40"
-            height="30"
-          />
-          <div class="payment-description">
-            <form id="payment-form">
-              <label for="card-number">Card Number:</label>
-              <input type="text" id="card-number" name="card-number" required />
-
-              <label for="expiration">Expiration Date:</label>
-              <input type="text" id="expiration" name="expiration" required />
-
-              <label for="cvv">CVV:</label>
-              <input type="text" id="cvv" name="cvv" required />
-            </form>
-          </div>
-        </li>
-        <li class="payment-option">
-          <input type="radio" id="paypal" name="payment-method" />
-          <label for="paypal">PayPal</label>
-          <img
-            src="images.css/Div/paypal.png"
-            alt="PayPal-Icon"
-            width="40"
-            height="30"
-          />
-          <div class="payment-description">You will be sent over to PayPal</div>
-        </li>
-        <li class="payment-option">
-          <input type="radio" id="vipps" name="payment-method" />
-          <label for="vipps">Vipps</label>
-          <img
-            src="images.css/Div/vipps.png"
-            alt="Vipps-Icon"
-            width="40"
-            height="30"
-          />
-          <div class="payment-description">You will be sent over to Vipps</div>
-        </li>
-      </ul>
+        <h1>Select a Payment Method:</h1>
+        <form id="payment-form">
+            <fieldset>
+                <legend>Payment Options</legend>
+                <ul>
+                    <li class="payment-option">
+                        <input type="radio" id="credit-card" name="payment-method">
+                        <label for="credit-card">Credit Card</label>
+                        <img src="images.css/Div/visa.jpeg" alt="Credit Card Icon" width="40" height="30">
+                        <div class="payment-description">
+                            <label for="card-number">Card Number:</label>
+                            <input type="text" id="card-number" name="card-number" required>
+                            <label for="expiration">Expiration Date:</label>
+                            <input type="text" id="expiration" name="expiration" required>
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" name="cvv" required>
+                        </div>
+                    </li>
+                    <li class="payment-option">
+                        <input type="radio" id="paypal" name="payment-method">
+                        <label for="paypal">PayPal</label>
+                        <img src="images.css/Div/paypal.png" alt="PayPal Icon" width="40" height="30">
+                        <div class="payment-description">You will be sent over to PayPal</div>
+                    </li>
+                    <li class="payment-option">
+                        <input type="radio" id="vipps" name="payment-method">
+                        <label for="vipps">Vipps</label>
+                        <img src="images.css/Div/vipps.png" alt="Vipps Icon" width="40" height="30">
+                        <div class="payment-description">You will be sent over to Vipps</div>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
     </div>
 
-    <h3>Total amount $205</h3>
+    <h2>Total amount $205</h2>
     <div>
-      <a href="summary.html">
+        <a href="summary.html">
         <button class="Proceed-btn">Proceed</button>
       </a>
     </div>

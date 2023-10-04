@@ -6,7 +6,7 @@ body {
   display: none;
 }
 
-.payment-option input[type="radio"]:check.mark-iconed + .payment-description {
+.payment-option input[type="radio"]:checked + .payment-description {
   display: block;
 }
 
@@ -46,7 +46,7 @@ body {
 
 .Proceed-btn {
   display: block;
-  margin: 20px auto; 
+  margin: 20px auto;
   font-size: 24px;
   padding: 10px 20px;
   background-color: #f29f05;
