@@ -90,7 +90,7 @@
 .product-and-total {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .product-details {
@@ -141,23 +141,6 @@
 .check.mark-icon-btn {
     display: center;
 }
-
-.continue-shopping {
-    background-color: rgba(242, 159, 5, 0.4);
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.continue-shopping:hover {
-    background-color: #e64a19;
-}
-
 .buy-now-button {
     background-color: rgba(242, 159, 5, 0.4);
     color: #000;
