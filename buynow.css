@@ -45,7 +45,7 @@ body {
 }
 
 .Proceed-btn {
-  display: block;
+  size: 40px;
   margin: 20px auto;
   font-size: 24px;
   padding: 10px 20px;
@@ -54,4 +54,10 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px; 
+  margin-bottom: 20px; 
 }
