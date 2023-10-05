@@ -193,10 +193,6 @@ nav {
     text-align: center;
 }
 
-.image-container {
-    position: relative;
-}
-
 .shop-button-overlay-btn {
     position: absolute;
     text-align: center;
@@ -253,6 +249,9 @@ nav {
     text-align: center;
     background-color: #FFFFFF;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .products img {
@@ -305,6 +304,7 @@ h3 {
     padding: 0 20px;
     text-decoration: none;
     color: black;
+    margin-top: auto;
 }
 
 .footer-section h3 {
