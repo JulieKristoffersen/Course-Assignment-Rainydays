@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loadingIndicator.style.display = "block";
 
-    fetch("https://julie-rainydaysassignment.netlify.app/men")
+    fetch("https://v2.api.noroff.dev/")
         .then(response => {
             if (!response.ok) {
                 throw new Error("Failed to fetch products");
