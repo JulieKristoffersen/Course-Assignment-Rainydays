@@ -8,6 +8,8 @@
     <title>Accessories-Rainydays</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="men.css">
+    <script src="javascript/accesories.js"></script>
+    <script src="javascript/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,87 +31,14 @@
         </ul>
     </nav>
     <div class="nav-line"></div>
-
     <main>
         <a href="javascript:history.back()" class="my-button">Back</a>
         <div class="jackets">
             <p><strong>Accessories</strong></p>
-            <div class="image-list">
-                <div class="product">
-                    <div class="image-container">
-                        <img src="images.css/Accesories/hat1.jpg" alt="Running hat black" class="product-img" />
-                        <img src="images.css/love.png" alt="like-button" class="top-left-img"/> 
-                        <a href="productinfo.html">
-                            <img src="images.css/shopping-cart.png" alt="profile-button" class="bottom-right-btn" />
-                        </a>
-                    </div>
-                    <p><strong>Running hat</strong></p>
-                    <p>$35</p>
-                </div>
-                <div class="product">
-                    <div class="image-container">
-                        <img src="images.css/Accesories/hat2.jpg" alt="Classic beanie" class="product-img" />
-                        <img src="images.css/love.png" alt="like-button" class="top-left-img" />
-                        <a href="productinfo.html">
-                            <img src="images.css/shopping-cart.png" alt="profile-button" class="bottom-right-btn" />
-                        </a>
-                    </div>
-                    <p><strong>Classic beanie</strong></p>
-                    <p>$49</p>
-                </div>
-                <div class="product">
-                    <div class="image-container">
-                        <img src="images.css/Homepage/HOME-woman.with.accesories.jpg" alt="Thin gloves" class="product-img" />
-                        <img src="images.css/love.png" alt="like-button" class="top-left-img" />
-                        <a href="productinfo.html">
-                            <img src="images.css/shopping-cart.png" alt="profile-button" class="bottom-right-btn" />
-                        </a>
-                    </div>
-                    <p><strong>Thin gloves</strong></p>
-                    <p>$29</p>
-                </div>
+            <div class="image-list" id="productList">
             </div>
         </div>
     </main>
-
-    <div class="footer">
-      <div class="container">
-          <div class="footer-section">
-              <h3>Follow us</h3>
-              <a href="facebook-icon.com" class="facebook-icon">
-                  <img src="images.css/Div/facebook.png" alt="facebook-icon">
-              </a>
-              <a href="instagram-icon.com" class="instagram-icon">
-                  <img src="images.css/Div/instagram.png" alt="instagram-icon">
-              </a>
-              <a href="youtube-icon.com" class="youtube-icon">
-                  <img src="images.css/Div/youtube.png" alt="youtube-icon">
-              </a>
-          </div>
-          <div class="footer-section">
-              <a href="about-us.html">
-                  <h3>About us</h3>
-                  <div class="footer-section">
-                      <p><strong>Visit our store</strong></p>
-                      <p>1600 Pennsylvania Avenue NW, Washington, DC 20500, United States</p>
-                  </div>
-              </a>
-          </div>
-          <div class="footer-section">
-              <a href="contact-us.html">
-                  <h3>Contact us</h3>
-                  <div class="contact-info">
-                      <p><img src="images.css/Div/email.png" alt="email-icon"></p>
-                      <p>rainydays.emailcontact@mail.com</p>
-                      <p><img src="images.css/Div/phone-call.png" alt="phone-icon"></p>
-                      <p>123 45 678 (open 7am - 4pm)</p>
-                  </div>
-              </a>
-          </div>
-          <div class="back-to-top">
-              <p><a href="#top">Back to top</a></p>
-          </div>
-      </div>
-  </div>
+    <div id="footerPlaceholder"></div>
 </body>
 </html>
