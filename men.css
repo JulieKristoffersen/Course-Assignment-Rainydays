@@ -62,7 +62,7 @@
 
 .bottom-right-btn {
   object-fit: scale-down;
-position: absolute;
+  position: absolute;
   bottom: 20px;
   right: -5px;
   max-height: 25px;
@@ -73,8 +73,8 @@ position: absolute;
 }
 
 .bottom-right-btn img {
-    width: 50%; 
-    height: 50%; 
+  width: 50%; 
+  height: 50%; 
   }
   
 
@@ -102,42 +102,14 @@ position: absolute;
   margin-right: 5px;
 }
 
-.footer {
-    background-color: orange;
-    color: black;
-    padding: 20px 0; 
-    text-align: center;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px; 
-    margin: 0 auto; 
-  }
-
-  .footer img {
-    width: 40px;
-    height: auto;
-    margin-right: 5px;
-  }
-  
-  .footer-section {
-    flex: 1; 
-    padding: 0 20px; 
-  }
-  
-  .footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px; 
-  }
-  
-  .back-to-top a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .back-to-top a:hover {
-    text-decoration: underline;
-  }
-  
+#loadingIndicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999; /* Ensure the loading indicator appears above other elements */
+}

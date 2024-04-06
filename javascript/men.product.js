@@ -1,3 +1,11 @@
+function showLoadingIndicator() {
+    document.getElementById('loadingIndicator').style.display = 'block';
+  }
+  
+  function hideLoadingIndicator() {
+    document.getElementById('loadingIndicator').style.display = 'none';
+  }
+
 const products = [
     {
         name: "Extreme Bom",
@@ -174,7 +182,6 @@ function createProductElement(product) {
     const productElement = document.createElement('div');
     productElement.classList.add('product');
 
-    // Add badge or label for on-sale products
     if (product.onSale) {
         const saleBadge = document.createElement('span');
         saleBadge.classList.add('sale-badge');
@@ -182,7 +189,6 @@ function createProductElement(product) {
         productElement.appendChild(saleBadge);
     }
 
-    // Create the product HTML
     productElement.innerHTML = `
         <div class="image-container">
             <img src="${product.image}" alt="${product.alt}" class="product-img" />
@@ -202,9 +208,6 @@ function createProductElement(product) {
 
     return productElement;
 }
-
-
-
 
 function populateProducts(category, productListId) {
     const productList = document.getElementById(productListId);
