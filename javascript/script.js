@@ -1,3 +1,29 @@
+fetch('https://v2.api.noroff.dev/')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    const filteredProducts = data.filter(product => product.category === category);
+
+    productList.innerHTML = ''; 
+
+    filteredProducts.forEach(product => {
+      const productContainer = document.createElement('div');
+      productContainer.classList.add('product-container');
+      const productElement = createProductElement(product);
+      productContainer.appendChild(productElement);
+      productList.appendChild(productContainer);
+    });
+
+    hideLoadingIndicator();
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+
 function generateFooter() {
     const footerPlaceholder = document.getElementById('footerPlaceholder');
 

@@ -1,11 +1,3 @@
-function showLoadingIndicator() {
-    document.getElementById('loadingIndicator').style.display = 'block';
-  }
-  
-  function hideLoadingIndicator() {
-    document.getElementById('loadingIndicator').style.display = 'none';
-  }
-
 const products = [
     {
         name: "Extreme Bom",
@@ -181,6 +173,7 @@ const products = [
 function createProductElement(product) {
     const productElement = document.createElement('div');
     productElement.classList.add('product');
+    productElement.dataset.productId = product.id; 
 
     if (product.onSale) {
         const saleBadge = document.createElement('span');
@@ -212,6 +205,11 @@ function createProductElement(product) {
 function populateProducts(category, productListId) {
     const productList = document.getElementById(productListId);
 
+    if (!Array.isArray(products)) {
+        console.error("Error fetching data: Data is not an array");
+        return;
+    }
+
     const filteredProducts = products.filter(product => product.category === category);
 
     filteredProducts.forEach(product => {
@@ -225,8 +223,34 @@ function populateProducts(category, productListId) {
     });
 }
 
+function showLoadingScreen() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    if (loadingScreen) {
+        loadingScreen.style.display = 'block';
+    }
+}
+
+function hideLoadingScreen() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    if (loadingScreen) {
+        loadingScreen.style.display = 'none';
+    }
+}
+
 window.addEventListener('load', () => {
     populateProducts('RAIN JACKETS', 'productList');
     populateProducts('ALL WEATHER JACKETS', 'allWeatherProductList');
     populateProducts('ACTIVITY JACKETS', 'activityProductList');
+});
+
+const productList = document.getElementById('productList');
+productList.addEventListener('click', event => {
+    const productContainer = event.target.closest('.product-container');
+    if (productContainer) {
+        showLoadingScreen();
+        setTimeout(() => {
+            const productId = productContainer.dataset.productId;
+            window.location.href = `productinfo.html?productId=${productId}`;
+        }, 1000);
+    }
 });

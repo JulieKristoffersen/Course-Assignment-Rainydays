@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Pushing the comfort zone, rain jackets from Rainydays"
-    />
-    <title>Men-Rainydays</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="men.css" />
-    <script src="javascript/men.product.js" defer></script>
-    <script src="javascript/script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <img
-          class="headerimg"
-          src="images.css/RainyDaysLogo-image.png"
-          alt="RainyDaysLogo-image"
-        />
-      </a>
-      <div class="headerimglist">
-        <img src="images.css/love.png" alt="like-button" />
-        <img src="images.css/user.png" alt="profile-button" />
-        <img src="images.css/shopping-cart.png" alt="cart-button" />
-      </div>
-    </header>
-    <nav>
-      <ul class="main-nav">
-        <li><a href="./men.html">Men</a></li>
-        <li><a href="./women.html">Women</a></li>
-        <li><a href="./news.html">News</a></li>
-        <li><a href="accesories.html">Accessories</a></li>
-      </ul>
-    </nav>
-    <div class="nav-line"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Pushing the comfort zone, rain jackets from Rainydays"
+  />
+  <title>Men-Rainydays</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="men.css" />
+  <script src="javascript/men.product.js" defer></script>
+  <script src="javascript/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img
+        class="headerimg"
+        src="images.css/RainyDaysLogo-image.png"
+        alt="RainyDaysLogo-image"
+      />
+    </a>
+    <div class="headerimglist">
+      <img src="images.css/love.png" alt="like-button" />
+      <img src="images.css/user.png" alt="profile-button" />
+      <img src="images.css/shopping-cart.png" alt="cart-button" />
+    </div>
+  </header>
+  <nav>
+    <ul class="main-nav">
+      <li><a href="./men.html">Men</a></li>
+      <li><a href="./women.html">Women</a></li>
+      <li><a href="./news.html">News</a></li>
+      <li><a href="accesories.html">Accessories</a></li>
+    </ul>
+  </nav>
+  <div class="nav-line"></div>
 
-    <main>
-      <a href="javascript:history.back()" class="my-button">Back</a>
+  <main>
+    <a href="javascript:history.back()" class="my-button">Back</a>
+    <div id="loadingScreen" class="loading-overlay">
+      <div class="loading-spinner"></div>
+      <p>Loading...</p>
+  </div>
+    <div class="jackets">
+      <p><strong>RAIN JACKETS</strong></p>
+      <div class="image-list" id="productList"></div>
+    </div>
 
-      <div id="loadingIndicator" style="display: none;">Loading...</div>
-  
-      <div class="jackets">
-          <p><strong>RAIN JACKETS</strong></p>
-          <div class="image-list" id="productList"></div>
-      </div>
-  
-      <div class="jackets">
-          <p><strong>ALL WEATHER JACKETS</strong></p>
-          <div class="image-list" id="allWeatherProductList"></div>
-      </div>
-  
-      <div class="jackets">
-          <p><strong>ACTIVITY JACKETS</strong></p>
-          <div class="image-list" id="activityProductList"></div>
-      </div>
+    <div class="jackets">
+      <p><strong>ALL WEATHER JACKETS</strong></p>
+      <div class="image-list" id="allWeatherProductList"></div>
+    </div>
+
+    <div class="jackets">
+      <p><strong>ACTIVITY JACKETS</strong></p>
+      <div class="image-list" id="activityProductList"></div>
+    </div>
   </main>
   <div id="footerPlaceholder"></div>
-  </body>
+</body>
 </html>
