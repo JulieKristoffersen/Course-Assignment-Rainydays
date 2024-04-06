@@ -82,6 +82,26 @@ position: absolute;
   background-color: #e65c00;
 }
 
+.sale-badge {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.discount-price {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
 .footer {
     background-color: orange;
     color: black;
