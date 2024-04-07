@@ -1,4 +1,3 @@
-// Define the array of products
 const accessoriesProducts = [
     {
         name: "Running hat",
@@ -20,11 +19,9 @@ const accessoriesProducts = [
     }
 ];
 
-// Function to populate products in the given productListId
 function populateProducts(products, productListId) {
     const productList = document.getElementById(productListId);
 
-    // Loop through each product and create HTML elements
     products.forEach(product => {
         const listItem = document.createElement('div');
         listItem.classList.add('product');
@@ -43,7 +40,6 @@ function populateProducts(products, productListId) {
     });
 }
 
-// Call the populateProducts function when the window is loaded
 window.addEventListener('load', () => {
     populateProducts(accessoriesProducts, 'productList');
 });

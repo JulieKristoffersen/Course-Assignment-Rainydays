@@ -232,14 +232,23 @@ window.addEventListener('load', () => {
     populateProducts('ACTIVITY JACKETS', 'activityProductList');
 });
 
-const productList = document.getElementById('productList');
-productList.addEventListener('click', event => {
-    const product = event.target.closest('.product');
-    if (product) {
-        showLoadingScreen();
-        setTimeout(() => {
-            const productId = product.dataset.productId;
-            window.location.href = `productinfo.html?productId=${productId}`;
-        }, 1000);
-    }
+const productLists = document.querySelectorAll('.image-list');
+productLists.forEach(productList => {
+    productList.addEventListener('click', event => {
+        const product = event.target.closest('.product');
+        if (product) {
+            showLoadingScreen();
+            setTimeout(() => {
+                const productId = product.dataset.productId;
+                window.location.href = `productinfo.html?productId=${productId}`;
+            }, 1000);
+        }
+    });
 });
+
+function showLoadingScreen() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    if (loadingScreen) {
+        loadingScreen.style.display = 'block';
+    }
+}
