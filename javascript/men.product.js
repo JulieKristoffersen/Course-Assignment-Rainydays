@@ -173,7 +173,6 @@ const products = [
 function createProductElement(product) {
     const productElement = document.createElement('div');
     productElement.classList.add('product');
-    productElement.dataset.productId = product.id; 
 
     if (product.onSale) {
         const saleBadge = document.createElement('span');
@@ -193,10 +192,10 @@ function createProductElement(product) {
         <p><strong>${product.name}</strong></p>
         ${product.onSale ? `
             <p class="price-section">
-                <span class="original-price"> $${product.price}</span> 
-                <span class="discount-price"> $${product.discountedPrice}</span>
+                <span class="original-price">$${product.price}</span> 
+                <span class="discount-price">$${product.discountedPrice}</span>
             </p>
-        ` : `<p>$ ${product.price}</p>`}
+        ` : `<p>$${product.price}</p>`}
     `;
 
     return productElement;
@@ -204,24 +203,14 @@ function createProductElement(product) {
 
 function populateProducts(category, productListId) {
     const productList = document.getElementById(productListId);
-
-    if (!Array.isArray(products)) {
-        console.error("Error fetching data: Data is not an array");
-        return;
-    }
-
     const filteredProducts = products.filter(product => product.category === category);
 
     filteredProducts.forEach(product => {
-        const productContainer = document.createElement('div');
-        productContainer.classList.add('product-container');
         const productElement = createProductElement(product);
-
-        productContainer.appendChild(productElement);
-
-        productList.appendChild(productContainer);
+        productList.appendChild(productElement);
     });
 }
+
 
 function showLoadingScreen() {
     const loadingScreen = document.getElementById('loadingScreen');
@@ -245,11 +234,11 @@ window.addEventListener('load', () => {
 
 const productList = document.getElementById('productList');
 productList.addEventListener('click', event => {
-    const productContainer = event.target.closest('.product-container');
-    if (productContainer) {
+    const product = event.target.closest('.product');
+    if (product) {
         showLoadingScreen();
         setTimeout(() => {
-            const productId = productContainer.dataset.productId;
+            const productId = product.dataset.productId;
             window.location.href = `productinfo.html?productId=${productId}`;
         }, 1000);
     }

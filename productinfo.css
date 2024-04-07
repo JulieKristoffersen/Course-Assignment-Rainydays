@@ -21,7 +21,9 @@ body {
 }
 
 .product-image {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
   height: auto;
   border-radius: 5px;
 }
@@ -59,6 +61,7 @@ body {
 
 .size-box {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
   font-size: 16px;

@@ -47,7 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     productContainer.innerHTML = productHTML;
 
-    logo.addEventListener('click', function() {
-        window.location.href = "index.html"; 
-    });
+    if (logo) {
+        logo.addEventListener('click', function() {
+            window.location.href = "index.html"; 
+        });
+    }
 });
