@@ -168,6 +168,32 @@ nav {
     margin: 20px
 }
 
+.contact-button-container {
+    position: absolute;
+    top: 135%; 
+    left: 20%; 
+    z-index: 10;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(242, 159, 5, 1);
+    color: #000;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.0rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #F27405;
+}
+
+
+
 .rowImages {
     margin-top: 20px;
     margin: 20px;
