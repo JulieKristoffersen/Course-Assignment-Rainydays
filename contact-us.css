@@ -1,3 +1,6 @@
+/* contact-us.css */
+
+/* Styling for the main content */
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -33,4 +36,41 @@ button[type="submit"] {
 
 button:active {
     background-color: #F27405;
+}
+
+/* Styling for the popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup p {
+    margin-bottom: 10px;
+}
+
+.popup button {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #F27405;
+    color: white;
 }

@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:5001362,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +46,7 @@
             <img src="images.css/Two.people.with.backpack.jpg" alt="two.people.wearing.backpacks" class="product-image">
             <div class="product-info">
                 <h1>Contact us</h1>
-                    <form action="process_form.php" method="POST">
+                    <form action="process_form.php" method="POST" onsubmit="showPopup(); return false;">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name">
                         
@@ -66,6 +61,23 @@
             </div>
         </main>
     </div>
+
+<div id="popup" class="popup">
+    <p>Email has been sent!</p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<script>
+    function showPopup() {
+        document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        window.location.href = "index.html"; 
+    }
+</script>
+
 
 <div class="footer">
     <div class="container">
