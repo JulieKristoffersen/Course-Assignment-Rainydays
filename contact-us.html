@@ -1,123 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <script>
-        function showPopup() {
-            document.getElementById("popup").style.display = "block";
-        }
+      function showPopup() {
+        document.getElementById("popup").style.display = "block";
+      }
     </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pushing the comfort zone, rain jackets from Rainydays">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pushing the comfort zone, rain jackets from Rainydays"
+    />
     <title>Contact.us-Rainydays</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="productinfo.css">
-    <link rel="stylesheet" href="about-us.css">
-    <link rel="stylesheet" href="men.css">
-    <link rel="stylesheet" href="contact-us.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="productinfo.css" />
+    <link rel="stylesheet" href="about-us.css" />
+    <link rel="stylesheet" href="men.css" />
+    <link rel="stylesheet" href="contact-us.css" />
+  </head>
+  <body>
     <header>
-        <a href="index.html">
-            <img class="headerimg" src="images.css/RainyDaysLogo-image.png" alt="RainyDaysLogo-image">
+      <a href="index.html">
+        <img
+          class="headerimg"
+          src="images.css/RainyDaysLogo-image.png"
+          alt="RainyDaysLogo-image"
+        />
+      </a>
+      <div class="headerimglist">
+        <img src="images.css/love.png" alt="like-button" />
+        <a href="login.html">
+          <img src="images.css/user.png" alt="profile-button" />
         </a>
-        <div class="headerimglist">
-            <img src="images.css/love.png" alt="like-button">
-            <a href="login.html">
-                <img src="images.css/user.png" alt="profile-button">
-            </a>
-            <a href="chekout.html">
-                <img src="images.css/shopping-cart.png" alt="cart-button">
-            </a>
-        </div>
+        <a href="chekout.html">
+          <img src="images.css/shopping-cart.png" alt="cart-button" />
+        </a>
+      </div>
     </header>
     <nav>
-        <ul class="main-nav">
-            <li><a href="./men.html">Men</a></li>
-            <li><a href="./women.html">Women</a></li>
-            <li><a href="./news.html">News</a></li>
-            <li><a href="accesories.html">Accessories</a></li>
-        </ul>
+      <ul class="main-nav">
+        <li><a href="./men.html">Men</a></li>
+        <li><a href="./women.html">Women</a></li>
+        <li><a href="./news.html">News</a></li>
+        <li><a href="accesories.html">Accessories</a></li>
+      </ul>
     </nav>
     <div class="nav-line">
-        <a href="javascript:history.back()" class="my-button">Back</a>
-        <main class="product-container">
-            <img src="images.css/Two.people.with.backpack.jpg" alt="two.people.wearing.backpacks" class="product-image">
-            <div class="product-info">
-                <h1>Contact us</h1>
-                    <form action="process_form.php" method="POST" onsubmit="showPopup(); return false;">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
-                        
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                        
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4"></textarea>
-                        
-                        <button type="submit">Submit</button>
-                    </form>
-            </div>
-        </main>
+      <a href="javascript:history.back()" class="my-button">Back</a>
+      <main class="product-container">
+        <img
+          src="images.css/Two.people.with.backpack.jpg"
+          alt="two.people.wearing.backpacks"
+          class="product-image"
+        />
+        <div class="product-info">
+          <h1>Contact us</h1>
+          <form
+            action="process_form.php"
+            method="POST"
+            onsubmit="showPopup(); return false;"
+          >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </main>
     </div>
 
-<div id="popup" class="popup">
-    <p>Email has been sent!</p>
-    <p>We will get back to you</p>
-    <button onclick="closePopup()">Close</button>
-</div>
+    <div id="popup" class="popup">
+      <p>Email has been sent!</p>
+      <p>We will get back to you</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
 
-<script>
-    function showPopup() {
+    <script>
+      function showPopup() {
         document.getElementById("popup").style.display = "block";
-    }
+      }
 
-    function closePopup() {
+      function closePopup() {
         document.getElementById("popup").style.display = "none";
-        window.location.href = "index.html"; 
-    }
-</script>
+        window.location.href = "index.html";
+      }
+    </script>
 
-
-<div class="footer">
-    <div class="container">
+    <div class="footer">
+      <div class="container">
         <div class="footer-section">
-            <h3>Follow us</h3>
-            <a href="facebook-icon.com" class="facebook-icon">
-                <p><img src="images.css/Div/facebook.png" alt="facebook-icon"></p>
-            </a>
-            <a href="instagram-icon.com" class="instagram-icon">
-                <p><img src="images.css/Div/instagram.png" alt="instagram-icon"></p>
-            </a>
-            <a href="youtube-icon.com" class="youtube-icon">
-                <p><img src="images.css/Div/youtube.png" alt="youtube-icon"></p>
-            </a>
+          <h3>Follow us</h3>
+          <a href="facebook-icon.com" class="facebook-icon">
+            <p><img src="images.css/Div/facebook.png" alt="facebook-icon" /></p>
+          </a>
+          <a href="instagram-icon.com" class="instagram-icon">
+            <p>
+              <img src="images.css/Div/instagram.png" alt="instagram-icon" />
+            </p>
+          </a>
+          <a href="youtube-icon.com" class="youtube-icon">
+            <p><img src="images.css/Div/youtube.png" alt="youtube-icon" /></p>
+          </a>
         </div>
         <div class="footer-section">
-            <a href="about-us.html">
-                <h3>About us</h3>
-                <div class="footer-section">
-                    <p><strong>Visit our store</strong></p>
-                    <p>1600 Pennsylvania Avenue NW, Washington, DC 20500, United States</p>
-                </div>
-            </a>
+          <a href="about-us.html">
+            <h3>About us</h3>
+            <div class="footer-section">
+              <p><strong>Visit our store</strong></p>
+              <p>
+                1600 Pennsylvania Avenue NW, Washington, DC 20500, United States
+              </p>
+            </div>
+          </a>
         </div>
         <div class="footer-section">
-            <a href="contact-us.html">
-                <h3>Contact us</h3>
-                <div class="contact-info">
-                    <p><img src="images.css/Div/email.png" alt="email-icon"></p>
-                    <p>rainydays.emailcontact@mail.com</p>
-                    <p><img src="images.css/Div/phone-call.png" alt="phone-icon"></p>
-                    <p>123 45 678 (open 7am - 4pm)</p>
-                </div>
-            </a>
+          <a href="contact-us.html">
+            <h3>Contact us</h3>
+            <div class="contact-info">
+              <p><img src="images.css/Div/email.png" alt="email-icon" /></p>
+              <p>rainydays.emailcontact@mail.com</p>
+              <p>
+                <img src="images.css/Div/phone-call.png" alt="phone-icon" />
+              </p>
+              <p>123 45 678 (open 7am - 4pm)</p>
+            </div>
+          </a>
         </div>
         <div class="back-to-top">
-            <p><a href="#top">Back to top</a></p>
+          <p><a href="#top">Back to top</a></p>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
