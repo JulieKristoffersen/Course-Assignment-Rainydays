@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const product = {
         name: "Extreme Bom",
-        image: "images.css/Mens.jackets/1.jpg",
+        image: "images/Mens.jackets/1.jpg",
         alt: "Man.with.red.jacket",
         price: 205,
         category: "RAIN JACKETS",
