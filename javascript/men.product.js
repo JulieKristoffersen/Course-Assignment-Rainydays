@@ -1,10 +1,10 @@
-const url = "http://flower-power.local/wp-json/wc/store/products?";
+const url = "https://julnys.no/Rainydays/app/public/wp-json/wc/store/products";
 
 async function getProducts(){
     try{
         const response = await fetch(url);
-        const getResults = await response.json()
-        console.log(getResults)
+        const getResults = await response.json();
+        console.log(getResults);
     }
     
     catch (error) {
@@ -12,9 +12,20 @@ async function getProducts(){
     }
 }
 
+getProducts();
+
+function createHTML(products){
+    product.forEach(function(product){
+        productContainer.innerHTML += 
+        `<div>
+            <h2>{product.name}</h2>
+            </div>`
+    })
+}
+
 document.addEventListener('click', (event) => {
     const someElement = document.getElementById('someElement');
-    if (someElement) { // Check if someElement is a valid Node
+    if (someElement) { 
         if (someElement.contains(event.target)) {
             console.log('Clicked inside the element');
         } else {
