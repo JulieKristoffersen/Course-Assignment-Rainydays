@@ -8,34 +8,34 @@ async function getProducts() {
         }
         const data = await response.json();
         console.log(data);
-        createHTML(data);
     } catch (error) {
         console.log('Error fetching products:', error);
-        const errorMessage = document.getElementById('errorMessage')
-         displayErrorMessage("Failed to load products");;
-        if (errorMessage) {
-            errorMessage.innerHTML = 'Failed to load products.';
-            errorMessage.style.display = 'block';
-        }
     }
 }
-
 getProducts();
 
-function createHTML(products) {
-    const productContainer = document.getElementById('productList');
-    if (productContainer) {
-        products.forEach(function(product) {
-            productContainer.innerHTML += 
-            `<div class="product" data-product-id="${product.id}">
-                <h2>${product.name}</h2>
-                <p>${product.description}</p>
-                <img src="${product.images[0].src}" alt="${product.name}">
-                <p>Price: $${product.price}</p>
+
+function createHTML(products){
+    products.forEach(function(product){
+        productContainer.innerHTML += 
+        `<div>
+            <h2>${product.name}</h2>
             </div>`;
-        });
-    }
+    });
 }
+
+document.addEventListener('click', (event) => {
+    const someElement = document.getElementById('someElement');
+    if (someElement) { 
+        if (someElement.contains(event.target)) {
+            console.log('Clicked inside the element');
+        } else {
+            console.log('Clicked outside the element');
+        }
+    } else {
+        console.log('Element not found or not a Node');
+    }
+});
 
 function showLoadingScreen() {
     const loadingScreen = document.getElementById('loadingScreen');
