@@ -7,7 +7,7 @@
     <meta
       name="description"
       content="Pushing the comfort zone, rain jackets from Rainydays"/>
-    <title>Men-Rainydays</title>
+    <title>Men - Rainydays</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="men.css" />
     <script src="javascript/men.product.js" defer></script>
@@ -19,7 +19,7 @@
         <img
           class="headerimg"
           src="images/RainyDaysLogo-image.png"
-          alt="RainyDaysLogo-image"
+          alt="RainyDays Logo"
         />
       </a>
       <div class="headerimglist">
@@ -33,19 +33,25 @@
         <li><a href="./men.html">Men</a></li>
         <li><a href="./women.html">Women</a></li>
         <li><a href="./news.html">News</a></li>
-        <li><a href="accesories.html">Accessories</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
       </ul>
     </nav>
     <div class="nav-line"></div>
-    <div id="errorMessage" style="display: none"></div>
+
+    <!-- Error message div -->
+    <div id="errorMessage" style="display: none; color: red;">Failed to load products</div>
 
     <main>
+      <!-- Back button -->
       <a href="javascript:history.back()" class="my-button">Back</a>
 
-      <div id="loadingScreen" class="loading-overlay">
+      <!-- Loading screen -->
+      <div id="loadingScreen" class="loading-overlay" style="display: none;">
         <div class="loading-spinner"></div>
         <p>Loading...</p>
       </div>
+
+      <!-- Jackets Section -->
       <div class="jackets">
         <p><strong>RAIN JACKETS</strong></p>
         <div class="image-list" id="productList"></div>
@@ -61,6 +67,12 @@
         <div class="image-list" id="activityProductList"></div>
       </div>
     </main>
+
     <div id="footerPlaceholder"></div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 RainyDays. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
