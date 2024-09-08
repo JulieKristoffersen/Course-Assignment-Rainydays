@@ -1,18 +1,19 @@
 const url = "https://julnys.no/Rainydays/app/public/wp-json/wc/store/products";
 
-async function getProducts(){
-    try{
+async function getProducts() {
+    try {
         const response = await fetch(url);
-        const getResults = await response.json();
-        console.log(getResults);
-    }
-    
-    catch (error) {
-        console.log(error);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.log('Error fetching products:', error);
     }
 }
-
 getProducts();
+
 
 function createHTML(products){
     product.forEach(function(product){
