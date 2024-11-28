@@ -6,6 +6,7 @@ Description
 
 "Rainydays" aims to:
 - Make an website for shopping.
+- Have the sites that are neccesary for having a functional shopping site including the checkout
 - Create a visually appealing, accessible, and easy-to-navigate website.
 
 This project was created using:
